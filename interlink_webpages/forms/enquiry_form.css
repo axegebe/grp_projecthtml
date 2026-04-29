@@ -1,0 +1,11 @@
+#mainheading {
+    text-align: center;
+    border: 1px solid black;
+    font-family: Victor Mono;
+}
+
+.form {
+    size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
