@@ -1,7 +1,9 @@
 #mainheading {
     text-align: center;
     border: 1px solid black;
-    font-family: Victor Mono;
+    border-radius: 0px 70px 70px 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 7px;
 }
 
 .form {
@@ -10,7 +12,7 @@
 
 }
 
-#submit_button {
+.buttons {
     font-family: Victor Mono;
     background-color: blueviolet;
     padding: 5px;
@@ -18,9 +20,23 @@
     font-size: 20px;
 }
 
-#submit_button:hover {
+.buttons:hover {
     color:blueviolet;
     background-color:cadetblue;   
+}
+
+.faqlink {
+    color: darkblue;
+    font-style: italic;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.faqlink:hover {
+    color: forestgreen;
+}
+
+.faqlink:active {
+    color:aquamarine;
 }
 
 table {
@@ -28,15 +44,27 @@ table {
      /*set table to 100%, then child elements can inherit via auto*/
 }
 th {
+    background-color: burlywood;
     width: auto;
     border: 1px solid black;
     border-radius: 20px;
     padding: 5px;
     text-align: center;
+    position: sticky;
+    /*position sticky should let the table headings stay on top no matter how far scrolled down*/
 }
 
 th:hover {
     width: auto;
-    background-color: aqua;
-    border-radius: 20px;
+    background-color: forestgreen;
+}
+
+th:active { /* when being clicked */
+    width: auto;
+    background-color: darkgreen;
+
+}
+
+body {
+    background-color: steelblue;
 }
