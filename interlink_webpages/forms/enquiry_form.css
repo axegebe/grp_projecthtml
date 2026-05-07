@@ -9,3 +9,34 @@
     font-family: 'Times New Roman', Times, serif;
 
 }
+
+#submit_button {
+    font-family: Victor Mono;
+    background-color: blueviolet;
+    padding: 5px;
+    color: violet;
+    font-size: 20px;
+}
+
+#submit_button:hover {
+    color:blueviolet;
+    background-color:cadetblue;   
+}
+
+table {
+    width: 100%;
+     /*set table to 100%, then child elements can inherit via auto*/
+}
+th {
+    width: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+th:hover {
+    width: auto;
+    background-color: aqua;
+    border-radius: 20px;
+}
