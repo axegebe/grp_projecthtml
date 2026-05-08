@@ -1,14 +1,3 @@
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: Victor Mono, monospace;
-    
-}
-
-body {
-    background-color: forestgreen;
-}
-
 .header {
     background-color: black;
     color: white;
@@ -21,6 +10,16 @@ body {
     background-position: center;
 }
 
+.topbuttonlink {
+    display: block;
+    padding: 10px;
+}
+
+.topbuttonlink:link, .topbuttonlink:visited, .topbuttonlink:visited {
+    color: black;
+}
+
+
 .intro {
     background-color: lightgray;
     border-radius: 20px;
@@ -29,6 +28,17 @@ body {
     padding: 10px;
     margin: 5px;
     font-size: 100px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Victor Mono, monospace;
+    
+}
+
+body {
+    background-color: forestgreen;
 }
 
 td {
@@ -45,9 +55,10 @@ th {
     flex: 1;
     background-color: burlywood;
     width: auto;
+    margin: 10px;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 5px;
+    padding: 0px;
     text-align: center;
     position: sticky;
     /*position sticky should let the table headings stay on top no matter how far scrolled down*/
@@ -65,6 +76,8 @@ th:active { /* when being clicked */
 }
 
 th:nth-child(4) { /*since nth-child has specific functions, must have its own psuedo classes*/
+    padding: 0px;
+     /*remove padding here, put padding at class registerlink, so entire th box can be clicked and redirected*/
     background-color: aqua;
     margin-left: 70px;
 }
@@ -76,6 +89,7 @@ th:nth-child(4):hover {
 th:nth-child(4):active {
     background-color: darkgreen;
 }
+
 h2{
     background-color: darkgreen;
     color: whitesmoke;
