@@ -12,19 +12,70 @@ body {
 .header {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 70px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    background-image: url(photos/snookerheader.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .intro {
     background-color: lightgray;
+    border-radius: 20px;
+    border: 7px solid black;
     color: black;
     padding: 10px;
     margin: 5px;
     font-size: 100px;
 }
 
+td {
+    padding: 7px;
+    border: 7px solid black;
+}
+
+
+thead, tr { 
+    /*Since css places elemwnts vertically, need to use flexbox to place side by side, then specify which th via nth child to create space on the left via margin-left */
+    display: flex;
+}
+th {
+    flex: 1;
+    background-color: burlywood;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    position: sticky;
+    /*position sticky should let the table headings stay on top no matter how far scrolled down*/
+}
+
+th:hover {
+    width: auto;
+    background-color: forestgreen;
+}
+
+th:active { /* when being clicked */
+    width: auto;
+    background-color: darkgreen;
+
+}
+
+th:nth-child(4) { /*since nth-child has specific functions, must have its own psuedo classes*/
+    background-color: aqua;
+    margin-left: 70px;
+}
+
+th:nth-child(4):hover {
+    background-color: forestgreen;
+}
+
+th:nth-child(4):active {
+    background-color: darkgreen;
+}
 h2{
     background-color: darkgreen;
     color: whitesmoke;
@@ -35,6 +86,7 @@ h2{
  
 #paragraph1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
     font-size: 25px;
 }
 
