@@ -24,11 +24,36 @@ body {
     margin: 5px;
     font-size: 100px;
 }
- h2{
+
+h2{
     background-color: darkgreen;
     color: whitesmoke;
     padding: 20px;
     margin: 20px;
     font-size: 30px;
+ }
+ 
+#paragraph1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+ #paragraph2 {
+        background-color: lightgray; 
+        color: black;
+        font-size: 23px; 
+        margin: 5px;
+        text-align: left; 
+        padding: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 5px;
+ }
+
+ #paragraph3 {
+        background-color: lightgray;
+        font-size: 23px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 20px; margin: 5px;
+        text-align: left;
  }
 
