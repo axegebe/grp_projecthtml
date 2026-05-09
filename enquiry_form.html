@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cssfiles/enquiry_form.css">
+        <title>Billard Club Enquiry Form</title>
+    </head>
+    <body>
+
+        <h1 id="mainheading">Enquiry Form</h1>
+
+        <h2>Fill the form below and we will get back to you ASAP!</h2>
+
+        <form action="/cgi-bin/post-query" method="POST" class="formbox">
+
+            <b> Email: </b>
+            <input type="email" placeholder="ilovemen@gmail.com">
+
+            <b>Phone Number: </b>
+            <input type="text" placeholder="+60123456789">
+          
+            <b>Preferred way of communication: </b> <br>
+            Email <input type="checkbox" value="E-mail">
+            Phone Call <input type="checkbox" value="Phone Call">       
+            Whatsapp <input type="checkbox" value="Whatsapp"> 
+
+            <b> Your Enquiry: </b>
+            <textarea rows="5" placeholder="e.g. How often will you update your news feed?"></textarea>
+
+            <input type="submit" class="buttons"> <input type="reset" class="buttons">
+        </form>
+        <br> <br>
+        <h3 style="text-align: center;">Feeling impatient? Check out our <a href=FAQ/faq.html target="_blank" class="faqlink">FAQ!</a></h3>
+    </body>
+</html>

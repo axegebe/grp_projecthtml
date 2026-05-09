@@ -8,11 +8,20 @@
 }
 
 .formbox{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    border: 3px solid black;
+    color: blue;
+    padding: 20px;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    background-image: url();
+    backdrop-filter: blur(10px);
+    border: 3px solid violet;
+}
+
+.formbox input, textarea {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .buttons {
@@ -35,37 +44,11 @@
 }
 
 .faqlink:hover {
-    color: forestgreen;
+    color: azure;
 }
 
 .faqlink:active {
     color:aquamarine;
-}
-
-table {
-    width: 100%;
-     /*set table to 100%, then child elements can inherit via auto*/
-}
-th {
-    background-color: burlywood;
-    width: fixed;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    position: sticky;
-    /*position sticky should let the table headings stay on top no matter how far scrolled down*/
-}
-
-th:hover {
-    width: fixed;
-    background-color: forestgreen;
-}
-
-th:active { /* when being clicked */
-    width: fixed;
-    background-color: darkgreen;
-
 }
 
 body {
