@@ -1,0 +1,44 @@
+#heading {
+        background-color: skyblue;
+        border: 2px solid black;
+        color: black;
+        margin: auto;
+        padding: 70px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        animation: heading .7s forwards;
+}
+
+.sections {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sections table {
+    margin: auto;
+    width: 100%;
+    border: 2px solid forestgreen;
+    border-radius: 10px;
+}
+
+.sections table:nth-child(2) {
+    margin-left: 50px;
+}
+
+body {
+    margin: 0;
+    background-color: darkgray;
+}
+
+@keyframes heading {
+    0% {
+        opacity: 0;
+        transform: translateX(30px); 
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
