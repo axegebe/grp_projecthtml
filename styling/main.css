@@ -10,24 +10,42 @@
     background-position: center;
 }
 
-.topbuttonlink {
-    display: block;
-    padding: 10px;
+.parentintro {
+    display: flex;
+    flex-direction: row; /*parent and children class, use divs*/
+    gap: 50px;
 }
-
-.topbuttonlink:link, .topbuttonlink:visited, .topbuttonlink:visited {
-    color: black;
-}
-
 
 .intro {
+    flex: 1; /*grow and shrink by taking all available space equally other flex:1 items*/
     background-color: lightgray;
     border-radius: 20px;
     border: 7px solid black;
     color: black;
     padding: 10px;
-    margin: 5px;
-    font-size: 100px;
+}
+
+.navigation {
+    display: flex;
+    padding: 15px;
+}
+
+.navigation a {
+    flex-wrap: wrap;
+    position: sticky;
+    text-align: center;
+    width: 100%;
+    background-color:darksalmon;
+    color: darkslategray;
+    text-decoration: none;
+    margin-left: 10px;
+    border: 2px solid violet;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.navigation a:nth-child(4) {
+    margin-left: 20%;
 }
 
 p {
@@ -41,54 +59,8 @@ body {
     background-color: forestgreen;
 }
 
-td {
-    padding: 7px;
-    border: 7px solid black;
-}
-
-
-thead, tr { 
-    /*Since css places elemwnts vertically, need to use flexbox to place side by side, then specify which th via nth child to create space on the left via margin-left */
-    display: flex;
-}
-th {
-    flex: 1;
-    background-color: burlywood;
-    width: auto;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 0px;
-    text-align: center;
-    position: sticky;
-    /*position sticky should let the table headings stay on top no matter how far scrolled down*/
-}
-
-th:hover {
-    width: auto;
-    background-color: forestgreen;
-}
-
-th:active { /* when being clicked */
-    width: auto;
-    background-color: darkgreen;
-
-}
-
-th:nth-child(4) { /*since nth-child has specific functions, must have its own psuedo classes*/
-    padding: 0px;
-     /*remove padding here, put padding at class registerlink, so entire th box can be clicked and redirected*/
-    background-color: aqua;
-    margin-left: 70px;
-}
-
-th:nth-child(4):hover {
-    background-color: forestgreen;
-}
-
-th:nth-child(4):active {
-    background-color: darkgreen;
-}
+/*position sticky should let the table headings stay on top no matter how far scrolled down*/
+/*Since css places elemwnts vertically, need to use flexbox to place side by side, then specify which th via nth child to create space on the left via margin-left */
 
 h2{
     background-color: darkgreen;
@@ -98,29 +70,9 @@ h2{
     font-size: 30px;
  }
  
-#paragraph1 {
+.paragraph td {
+    padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: 25px;
 }
-
- #paragraph2 {
-        background-color: lightgray; 
-        color: black;
-        font-size: 23px; 
-        margin: 5px;
-        text-align: left; 
-        padding: 30px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin: 5px;
- }
-
- #paragraph3 {
-        background-color: lightgray;
-        font-size: 23px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        padding: 20px; margin: 5px;
-        text-align: left;
- }
-
- 
