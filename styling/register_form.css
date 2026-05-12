@@ -1,0 +1,40 @@
+.main-container {
+    height: 500px;
+    width: 500px;
+    border: 10px dashed #724d1b;
+    background-color: #080606;
+    padding: auto;
+    padding-top: 20px;
+    color: rgba(206, 10, 10, 0.434);
+
+}
+
+.nav-like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    padding: auto;
+    padding-top: 20px;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*水平置中 */
+}
+
+.image-container img {
+    max-width: 50%;
+    /* 圖片最大寬度 */
+    height: auto;
+    display: block;
+}
+
+input {
+    margin: auto;
+    margin-top: 20px;
+}
