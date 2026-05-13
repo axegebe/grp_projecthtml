@@ -7,20 +7,27 @@
     padding: 3px;
 }
 
-.formbox{
+.formbox {
+    box-shadow: 2px 5px 7px darkgray;
     color: blue;
-    padding: 20px;
-    text-align: left;
+    background-color: darkgray;
+    padding: 10px;
+    border: 5px solid violet;
+    border-radius: 20px;
     width: 50%;
     margin: 0 auto;
-    border: 3px solid violet;
-    animation: fadein 0.5s ease-in backwards;
+    animation: fadein 1s forwards;
 }
 
-.formbox input, textarea {
+.formbox input,textarea {
     padding: 5px;
-    width: 100%;
-    margin: 7px 0px 7px ;
+    margin: 10px;
+    width: 90%;
+}
+
+.formbox input[type="checkbox"] {
+    margin: auto;
+    margin-left: 50px;
 }
 
 .buttons {
