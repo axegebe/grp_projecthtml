@@ -7,6 +7,15 @@
     padding: 3px;
 }
 
+.secondheading {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    animation: headertyping 1s steps(70) forwards;
+    white-space: nowrap; /*steps to split into how much interval, smoothness, overflow to hide text not 'typed out' yet,*/
+    overflow: hidden;
+}
+
 .formbox {
     box-shadow: 2px 5px 7px darkgray;
     color: blue;
@@ -58,6 +67,10 @@
 }
 
 body {
+    background-image: url(photos/snooker.webp);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: steelblue;
 }
 
@@ -69,5 +82,15 @@ body {
     100% {
         opacity: 100%;
         transform: translateY(0);
+    }
+}
+
+@keyframes headertyping {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 53ch;
     }
 }
