@@ -17,6 +17,7 @@
 }
 
 .sections table {
+    background-color: aliceblue;
     margin: auto;
     width: 100%;
     border: 2px solid forestgreen;
@@ -25,6 +26,10 @@
 
 .sections table:nth-child(2) {
     margin-left: 50px;
+}
+
+.section table:nth-child(3) {
+    margin: 0 auto;
 }
 
 body {
