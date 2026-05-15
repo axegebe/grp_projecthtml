@@ -12,20 +12,19 @@
 
 .intro {
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .intro table {
     margin: auto;
-    width: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 40%;
     background-color: lightgray;
     border-radius: 20px;
     border: 7px solid black;
     color: black;
     padding: 10px;
-}
-.intro table:nth-child(2) {
-    margin-left: 10px;
 }
 
 .navigation {
