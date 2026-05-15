@@ -11,6 +11,7 @@
 
 .sections {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -19,17 +20,24 @@
 .sections table {
     background-color: aliceblue;
     margin: auto;
-    width: 100%;
+    width: 33.33%;
     border: 2px solid forestgreen;
     border-radius: 10px;
+}
+
+.sections td {
+    text-align: center;
+    font-family: systemspace;
 }
 
 .sections table:nth-child(2) {
     margin-left: 50px;
 }
 
-.section table:nth-child(3) {
+.sections table:nth-child(3) {
+    width: 50;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 body {
@@ -46,4 +54,9 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+@font-face {
+    font-family: systemspace;
+    src: url(font/04B_03__.TTF);
 }
