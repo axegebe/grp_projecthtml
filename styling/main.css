@@ -1,10 +1,11 @@
 .header {
     background-color: black;
-    color: darkorange;
+    color: darkturquoise;
     padding: 70px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: systemspace;
     background-image: url(photos/snookerheader.jpg);
+    font-size: 36pt;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
