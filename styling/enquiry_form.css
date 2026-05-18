@@ -16,6 +16,9 @@
 
 .secondheading {
     margin: 0 auto;
+    border: 3px solid violet;
+    animation: fadein 0.5s ease-in backwards;
+    background-color: aliceblue;
     margin-bottom: 10px;
     padding: 10px;
     animation: headertyping 1s steps(70) forwards;
@@ -49,9 +52,10 @@
 .buttons {
     font-family: Victor Mono;
     background-color: blueviolet;
-    padding: 5px;
+    padding: 10px 20px;
     color: violet;
     font-size: 20px;
+    background-color: purple;
 }
 
 .buttons:hover {
@@ -90,6 +94,21 @@ body {
         opacity: 100%;
         transform: translateY(0);
     }
+}
+button{
+    background-color: black;
+    color: yellow;
+    border: orange solid 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3 {
+    background-color: white;
+    padding: 5px;
 }
 
 @keyframes headertyping {
