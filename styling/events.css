@@ -3,9 +3,10 @@
         border: 2px solid black;
         color: black;
         margin: auto;
-        padding: 70px;
+        padding: 50px;
         text-align: center;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: systemspace;
+        font-size: 36pt;
         animation: heading .7s forwards;
 }
 
@@ -15,19 +16,19 @@
     margin: auto;
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: heading 1.7s forwards;
 }
 
 .sections table {
     background-color: aliceblue;
     margin: auto;
-    width: 33.33%;
+    width: 40%;
     border: 2px solid forestgreen;
     border-radius: 10px;
 }
 
 .sections td {
     text-align: center;
-    font-family: systemspace;
 }
 
 .sections table:nth-child(2) {
