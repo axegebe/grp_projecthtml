@@ -24,8 +24,13 @@
                 </div>
                 <label for="website">Rate our webpage:</label> <br>
                 <input type="range" value="5" name="webpage" min="1" max="10" oninput="this.nextElementSibling.value = this.value"><output>5</output><br> <!--next element sibling = output tag, which will equal to the current value of the range-->
-                <label for="comments">Additional comments:</label> <br>
-                <textarea name="comments" id="comments" rows="10"></textarea>
+                <label for="userfriendly">Would you agree our webpage is easy to navigate?</label>
+                <select name="userfriendly" id="userfriendly"> <br>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select> <br>
+                <label for="comments">Explain more in detail (if you have):</label> <br>
+                <textarea name="comments" id="comments" rows="10" placeholder="I hate your webpage please take it down now."></textarea>
                 <input type="submit"><input type="reset">
         </form>
     </body>
