@@ -5,90 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <script src= "https://kit.fontawesome.com/72de7666a8.js" crossorigin="anonymous">
-    </script>
     <link rel="stylesheet" href="styling/register_form.css">
 </head>
 
 <body>
-    <div class="main-container"> <div class="container">
-        <div class="nav-like">
-            <div class="title">
-                <h4>Registration Form</h4>
-            </div>
-            <div class="logo">
-                <img  src="photos/billardslogo.jpeg" alt="BillardsClubLogo">
+    <form>
+        <div class="main-container">
+            <div class="container">
+                <div class="nav-like">
+                    <div class="title">
+                        <h1 style="text-align: center;">Registration Form</h1>
+                    </div>
+                    <div class="logo">
+                        <img src="styling\photos\billardslogo.png" alt="billardslogo" class="center-image">
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="Form-Login">
+                        <div class="sub-title">
+                            <h2 style="text-align: center;">Billard Registration Form
+                                <p>Please Fill in the required information to register</p>
+                            </h2>
+                        </div>
+                        <div class="input-fields">
+                            <div class="first-name" style="text-align: center;">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" placeholder="First Name">
+                            </div>
+                            <br>
+                            <div class="last-name" style="text-align: center;">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" placeholder="Last Name">
+                            </div>
+                            <br>
+                            <div class="email" style="text-align: center;">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Email">
+                            </div>
+                            <br>
+                            <div class="phone-number" style="text-align: center;">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="text" id="phone-number" placeholder="Phone Number">
+                            </div>
+                            <br>
+                            <div class="Age" style="text-align: center;">
+                                <label for="Age">Age</label>
+                                <input type="text" id="Age" placeholder="Age">
+                            </div>
+                            <br>
+                            <div class="gender" style="text-align: center;">
+                                <label for="gender">Gender</label>
+                                <input type="text" id="gender" placeholder="Male/Female">
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="skill-level" style="text-align: center;">
+                            <b><span class="radio-title">Skill Level</span></b>
+                            <div class="radio-container">
+
+                            </div>
+                            <th><input type="radio" name="radio" value="radio">Beginner</th>
+                            <th><input type="radio" name="radio" value="radio2">Intermediate</th>
+                            <th><input type="radio" name="radio" value="radio3">Advanced</th>
+                        </div>
+                        <br>
+                        <div class="button-container" style="text-align: center;">
+                            <button type="submit" style="text-align: center;">Submit</button>
+                            <button type="reset" style="text-align: center;">Reset</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="parent">
-            <div class="Form-Login"> <div class="sub-title">
-                <h5>Billard Registration Form
-                    <p>Please Fill in the required information to register</p>
-                </h5>
-            </div>
-            <div class="input-fields">
-                <div class="first-name">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="First Name">
-                </div>
-                <div class="last-name">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Last Name">
-                </div>
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email">
-                </div>
-                <div class="phone-number">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="text" id="phone-number" placeholder="Phone Number">
-                </div>
-
-                <div class="Age">
-                    <label for="Age">Age</label>
-                    <input type="text" id="Age" placeholder="Age">
-                </div>
-                <div class="gender">
-                    <label for="gender">Gender</label>
-                    <input type="text" id="gender" placeholder="Male/Female/">
-                </div>
-
-            </div>
-            <br>
-            <div class="skill-level">
-                <label for="skill-level">Skill Level</label>
-                <p><input type="radio" name="radio" value="radio">Beginner</p>
-                <p><input type="radio" name="radio" value="radio2">Intermediate</p>
-                <p><input type="radio" name="radio" value="radio3">Advanced</p>
-            </div>
-
-            <tr style="position: relative;">
-                <td><input type=submit></td>
-                <td><input type=reset></td>
-            </tr>
-            </section>
-
-        </div>
-        <!--Test comment-->
-        <br><br>
-        <a href="main.html">
-         <button id="button2"><strong>Go back to the main page</strong></button>
-         </a>
-         <br>
-         <br>
-        <a href="enquiry_form.html">
-         <button id="button3"><strong>Click and fill out the enquiry form to reach out to us!!</strong></button>
-         </a>
-         <br>
-         <br>
-         <a href="calendarandevents.html">
-            <button id="button5"><strong>Click here to find out about upcoming events!!</strong></button>
-         </a>
-         <br>
-         <br>
-        <a href="rules_and_regulations.html">
-            <button id="button4"><strong>Click here to check out the rules and regulations!!</strong></button>
-        </a>
+    </form>
 </body>
 
 </html>

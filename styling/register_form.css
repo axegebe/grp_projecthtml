@@ -1,35 +1,92 @@
-body{
+.center-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+body {
     background-image: url(photos/snooker.webp);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Arial', sans-serif;
+    width: 100%;
     background-repeat: no-repeat;
+    background-position: center;
+
 }
+
 .main-container {
-    
-    width: 500px;
-    border: 10px dashed #724d1b;
-    background-color:gray;
-    padding: auto;
-    padding-top: 20px;
-    color: yellow;
-
+    border-radius: 100px;
+    border: 5px solid rgb(15, 15, 15);
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 50px;
 }
 
-.nav-like {
+.sub-title {
+    text-align: center;
+    color: rgb(13, 218, 98);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Form-Login {
+    background-color: rgb(233, 233, 233);
+    border-radius: 50px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.input-fields {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 45px;
+    padding-right: 250px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 8.5px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 400px;
+}
+
+
+
+.button-container {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.button-container button:hover {
+    background-color: rgb(70, 18, 128);
+}
+
+.radio-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 150px;
 }
 
-.title {
-    padding: auto;
-    padding-top: 20px;
-}
-
-.image-container {
-    width: 100%;
+.radio-item {
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     /*水平置中 */
 }
@@ -57,4 +114,9 @@ button{
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+=======
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+>>>>>>> 9b1654a8fe3bd60ee213803f1c803475fd142c27
 }
