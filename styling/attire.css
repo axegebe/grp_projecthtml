@@ -1,0 +1,49 @@
+.mainheading {
+    background-color: rgb(33, 201, 18);
+        border: 2px solid black;
+        color: black;
+        margin: auto;
+        padding: 30px;
+        text-align: center;
+        font-family: systemspace;
+        font-size: 36pt;
+}
+
+.secondheading {
+    margin: auto;
+    border: 3px solid violet;;
+    padding: 10px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap; /*steps to split into how much interval, smoothness, overflow to hide text not 'typed out' yet,*/
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+button {
+    background-color: black;
+    color: yellow;
+    border: orange solid 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3 {
+    background-color: white;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}
+@font-face {
+    font-family: systemspace;
+    src: url(font/04B_03__.TTF)
+}
