@@ -3,7 +3,7 @@
         border: 2px solid black;
         color: black;
         margin: auto;
-        padding: 50px;
+        padding: 30px;
         text-align: center;
         font-family: systemspace;
         font-size: 36pt;
@@ -39,6 +39,10 @@
     width: 50;
     margin: 0 auto;
     margin-top: 10px;
+}
+
+.sections li {
+    padding: 5px;
 }
 
 body {

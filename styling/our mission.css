@@ -30,12 +30,6 @@ table {
     margin: 0;
 }
 
-#paragraph2 {
-    background-color: darkgreen;
-    color: white;
-    font-size: 1.2em;
-    line-height: 1.8;
-}
 button{
     background-color: black;
     color: yellow;
@@ -47,19 +41,20 @@ button{
     transition: background-color 0.3s ease, color 0.3s ease;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #button2{
     background-color: black;
     color: yellow;
     border: orange solid 5px;
-    padding: 
 }
     
-    #paragraph3 {
+#paragraph3 {
     background-color: darkgreen;
     color: beige;
     font-size: 1.3em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 iframe {
 border: 10px solid darkgreen;
 border-radius: 25px;
