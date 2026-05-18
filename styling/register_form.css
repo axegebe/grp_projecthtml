@@ -86,37 +86,7 @@ input[type="tel"] {
 
 .radio-item {
     display: flex;
-<<<<<<< HEAD
-    justify-content: center;
-    /*水平置中 */
-}
-
-.image-container img {
-    max-width: 50%;
-    /* 圖片最大寬度 */
-    height: auto;
-    display: block;
-    /* 讓圖片成為區塊元素 */
-    margin: auto;
-}
-
-input {
-    margin: auto;
-    margin-top: 20px;
-}
-button{
-    background-color: black;
-    color: yellow;
-    border: orange solid 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-=======
     align-items: center;
     gap: 50px;
     cursor: pointer;
->>>>>>> 9b1654a8fe3bd60ee213803f1c803475fd142c27
 }
