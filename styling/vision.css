@@ -1,0 +1,44 @@
+.mainheading {
+    background-color: rgb(73, 160, 231);
+        border: 2px solid black;
+        color: black;
+        margin: auto;
+        padding: 30px;
+        text-align: center;
+        font-family: systemspace;
+        font-size: 36pt;
+}
+
+.secondheading {
+    margin: auto;
+    border: 3px solid rgb(8, 224, 19);;
+    padding: 10px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap; /*steps to split into how much interval, smoothness, overflow to hide text not 'typed out' yet,*/
+    overflow: hidden;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(238, 78, 86);
+}
+
+.container {
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: rgb(177, 205, 212);
+    border: 2px solid rgb(9, 138, 224);
+    border-radius: 50px;
+    text-align: justify;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: systemspace;
+    src: url(font/04B_03__.TTF)
+}
