@@ -1,40 +1,92 @@
-.main-container {
-    height: 500px;
-    width: 500px;
-    border: 10px dashed #724d1b;
-    background-color: #080606;
-    padding: auto;
-    padding-top: 20px;
-    color: rgba(206, 10, 10, 0.434);
+.center-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+body {
+    background-image: url(photos/snooker.webp);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
-.nav-like {
+.main-container {
+    border-radius: 100px;
+    border: 5px solid rgb(15, 15, 15);
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.sub-title {
+    text-align: center;
+    color: rgb(13, 218, 98);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Form-Login {
+    background-color: rgb(233, 233, 233);
+    border-radius: 50px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.input-fields {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 45px;
+    padding-right: 250px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 8.5px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 400px;
+}
+
+
+
+.button-container {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.button-container button:hover {
+    background-color: rgb(70, 18, 128);
+}
+
+.radio-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 150px;
 }
 
-.title {
-    padding: auto;
-    padding-top: 20px;
-}
-
-.image-container {
-    width: 100%;
+.radio-item {
     display: flex;
-    justify-content: center;
-    /*水平置中 */
-}
-
-.image-container img {
-    max-width: 50%;
-    /* 圖片最大寬度 */
-    height: auto;
-    display: block;
-}
-
-input {
-    margin: auto;
-    margin-top: 20px;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
 }
