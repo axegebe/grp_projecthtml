@@ -7,22 +7,40 @@
     padding: 3px;
 }
 
-.formbox{
-    color: blue;
-    padding: 20px;
-    text-align: left;
-    width: 50%;
+.secondheading {
     margin: 0 auto;
     border: 3px solid violet;
     animation: fadein 0.5s ease-in backwards;
     background-color: aliceblue;
+    margin-bottom: 10px;
+    padding: 10px;
+    animation: headertyping 1s steps(70) forwards;
+    white-space: nowrap; /*steps to split into how much interval, smoothness, overflow to hide text not 'typed out' yet,*/
+    overflow: hidden;
 }
 
-.formbox input, textarea {
-    padding: 5px;
-    width: 100%;
-    margin: 7px 0px 7px ;
+.formbox {
+    box-shadow: 2px 5px 7px darkgray;
+    color: blue;
+    background-color: darkgray;
+    padding: 10px;
+    border: 5px solid violet;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+    animation: fadein 1s forwards;
 }
+
+.formbox input,textarea {
+    padding: 5px;
+    margin: 10px;
+    width: 90%;
+}
+
+.formbox input[type="checkbox"] {
+    margin: auto;
+    margin-left: 50px;
+ }
 
 .buttons {
     font-family: Victor Mono;
@@ -54,10 +72,10 @@
 
 body {
     background-image: url(photos/snooker.webp);
-    background-size: cover;
-    background-position: center;
+    width: 100%;
     background-repeat: no-repeat;
-    font-family: 'Arial', sans-serif;   
+    background-position: center;
+    background-color: steelblue;
 }
 
 @keyframes fadein { /*keyframes are to define animations*/
@@ -81,7 +99,17 @@ button{
     transition: background-color 0.3s ease, color 0.3s ease;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h3{
+h3 {
     background-color: white;
     padding: 5px;
+}
+
+@keyframes headertyping {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 53ch;
+    }
 }

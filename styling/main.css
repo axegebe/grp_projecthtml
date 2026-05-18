@@ -1,6 +1,6 @@
 .header {
     background-color: black;
-    color: white;
+    color: darkorange;
     padding: 70px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -10,14 +10,16 @@
     background-position: center;
 }
 
-.parentintro {
+.intro {
     display: flex;
-    flex-direction: row; /*parent and children class, use divs*/
-    gap: 50px;
+    flex-wrap: wrap;
 }
 
-.intro {
-    flex: 1; /*grow and shrink by taking all available space equally other flex:1 items*/
+.intro table {
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 40%;
     background-color: lightgray;
     border-radius: 20px;
     border: 7px solid black;
@@ -31,27 +33,34 @@
 }
 
 .navigation a {
-    flex-wrap: wrap;
+    font-family: systemspace;
     position: sticky;
     text-align: center;
     width: 100%;
     background-color:darksalmon;
-    color: darkslategray;
+    color: darkmagenta;
     text-decoration: none;
     margin-left: 10px;
-    border: 2px solid violet;
+    border: 2px solid darkred;
     border-radius: 20px;
     padding: 15px;
 }
 
-.navigation a:nth-child(4) {
+.navigation a:nth-child(5) {
     margin-left: 20%;
 }
 
-p {
+.navigation a:hover {
+    background-color: blanchedalmond;
+}
+.navigation a:active {
+    background-color: cornflowerblue;
+}
+
+td {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Victor Mono, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
@@ -60,7 +69,7 @@ body {
 }
 
 /*position sticky should let the table headings stay on top no matter how far scrolled down*/
-/*Since css places elemwnts vertically, need to use flexbox to place side by side, then specify which th via nth child to create space on the left via margin-left */
+/*Since css places elements vertically, need to use flexbox to place side by side, then specify which th via nth child to create space on the left via margin-left */
 
 h2{
     background-color: darkgreen;
@@ -70,9 +79,7 @@ h2{
     font-size: 30px;
  }
  
-.paragraph td {
-    padding: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    font-size: 25px;
+ @font-face {
+    font-family: systemspace;
+    src: url(font/04B_03__.TTF);
 }
