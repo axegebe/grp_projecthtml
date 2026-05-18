@@ -1,0 +1,47 @@
+.feedbackform {
+    width: 45%;
+    border: 3px solid cornsilk;
+    border-radius: 7px;
+    box-shadow: 5px 4px 3px gray;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.feedbackform label, input {
+    width: auto;
+    margin: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.feedbackform input[type="text"] {
+    width: 90%;
+    padding: 4px;
+}
+
+.feedbackform textarea {
+    width: 90%;
+}
+
+#details {
+    display: none;
+}
+
+.heading {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 36pt;
+    width: 50%;
+    font-family: systemspace;
+    color: aliceblue;
+}
+
+body {
+    margin: 0;
+    background-color: darkslategray;
+}
+
+@font-face {
+    font-family: systemspace;
+    src: url(font/04B_03__.TTF);
+}

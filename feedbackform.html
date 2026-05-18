@@ -5,9 +5,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Feedback form for APU's Billiards Club">
-        <link rel="stylesheet" href="feedbackform.html">
+        <link rel="stylesheet" href="styling/feedbackform.css">
+        <script src="js/feedbackform.js" defer></script>
     </head>
     <body>
-        <h1>Feedback Form</h1>
+        <h1 class="heading">Feedback Form</h1>
+        <form class="feedbackform">
+                <label>Do you want your details to be shared?</label> <br>
+                <input type="radio" id="anonymousyes" value="Yes" name="hiddenornot">
+                <label for="anonymousyes">Yes</label> <br>
+                <input type="radio" id="anonymousno" value="No" name="hiddenornot">
+                <label for="anonymousno">No</label> <br> <br>
+                <div id="details">
+                    <label for="email">Email:</label> <br>
+                    <input type="text" name="Email" id="email" placeholder="imscaredofwomen@mail.com"> <br>
+                    <label for="phonenumber">Phone Number:</label> <br>
+                    <input type="text" name="phonenumber" id="phonenumber" placeholder="+60123456789">
+                </div>
+                <label for="website">Rate our webpage:</label> <br>
+                <input type="range" value="5" name="webpage" min="1" max="10" oninput="this.nextElementSibling.value = this.value"><output>5</output><br> <!--next element sibling = output tag, which will equal to the current value of the range-->
+                <label for="comments">Additional comments:</label> <br>
+                <textarea name="comments" id="comments" rows="10"></textarea>
+                <input type="submit"><input type="reset">
+        </form>
     </body>
 </html>
