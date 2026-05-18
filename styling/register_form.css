@@ -1,11 +1,18 @@
+body{
+    background-image: url(photos/snooker.webp);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    background-repeat: no-repeat;
+}
 .main-container {
-    height: 500px;
+    
     width: 500px;
     border: 10px dashed #724d1b;
-    background-color: #080606;
+    background-color:gray;
     padding: auto;
     padding-top: 20px;
-    color: rgba(206, 10, 10, 0.434);
+    color: yellow;
 
 }
 
@@ -32,9 +39,22 @@
     /* 圖片最大寬度 */
     height: auto;
     display: block;
+    /* 讓圖片成為區塊元素 */
+    margin: auto;
 }
 
 input {
     margin: auto;
     margin-top: 20px;
+}
+button{
+    background-color: black;
+    color: yellow;
+    border: orange solid 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

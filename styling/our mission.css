@@ -1,9 +1,9 @@
 body{
-    background-image: url(../photos/snooker.webp);
+    background-image: url(photos/snooker.webp);
     background-size: cover;
     background-position: center;
     font-family: 'Arial', sans-serif;
-    
+    background-repeat: no-repeat;
 }
 
 table {
@@ -11,8 +11,8 @@ table {
 }
 
 .header {
-    background-color: darkyellow;
-    color: white;
+    background-color: yellow;
+    color: black;
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 30px;
@@ -37,9 +37,9 @@ table {
     line-height: 1.8;
 }
 button{
-    background-color: red;
+    background-color: black;
     color: yellow;
-    border: none;
+    border: orange solid 5px;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
@@ -47,10 +47,21 @@ button{
     transition: background-color 0.3s ease, color 0.3s ease;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#paragraph3{
+#button2{
+    background-color: black;
+    color: yellow;
+    border: orange solid 5px;
+    padding: 
+}
+    
+    #paragraph3 {
     background-color: darkgreen;
     color: beige;
     font-size: 1.3em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+iframe {
+border: 10px solid darkgreen;
+border-radius: 25px;
 }
 
