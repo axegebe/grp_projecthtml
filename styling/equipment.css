@@ -1,6 +1,5 @@
 .mainheading {
     background-color: rgb(201, 46, 18);
-        border: 2px solid black;
         color: black;
         margin: auto;
         padding: 30px;
@@ -23,6 +22,7 @@
 
 body {
     background-color: rgb(167, 166, 141);
+    margin: 0;
 }
 
 .paragraph {
@@ -41,6 +41,10 @@ ul {
     font-size: 15pt;
     text-align: left;
     margin: 0 auto;
+}
+
+li {
+    margin-left: 10px;
 }
 
 button {

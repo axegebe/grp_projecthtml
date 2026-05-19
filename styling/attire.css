@@ -1,8 +1,7 @@
 .mainheading {
     background-color: rgb(33, 201, 18);
-        border: 2px solid black;
         color: black;
-        margin: auto;
+        margin: 0 auto;
         padding: 30px;
         text-align: center;
         font-family: systemspace;
@@ -23,6 +22,7 @@
 
 body {
     background-color: rgb(233, 226, 166);
+    margin: 0;
 }
 
 .paragraph {
@@ -41,6 +41,10 @@ ul {
     font-size: 15pt;
     text-align: left;
     margin: 0 auto;
+}
+
+li {
+    margin-left: 10px;
 }
 
 button {
