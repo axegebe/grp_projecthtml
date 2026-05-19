@@ -1,68 +1,31 @@
 .mainheading {
     background-color: rgb(201, 46, 18);
-        border: 2px solid black;
-        color: white;
-        margin: auto;
-        padding: 30px;
-        text-align: center;
-        font-family: systemspace;
-        font-size: 36pt;
+    width: 100%;
+    color: white;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-family: systemspace;
+    font-size: 36pt;
 }
 
 body {
     background-color: rgb(167, 166, 141);
-    
+    margin: 0;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.box1 {
-    max-width: 1000px;
-    max-height: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: rgb(177, 205, 212);
-    border: 2px solid rgb(9, 138, 224);
-    border-radius: 50px;
-    text-align: center;
-    font-size: 15pt;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: 20px;
+.container > div { /* > means to select a child element within*/
+    flex: 1; /*flex is shortform for grow shrink and basis -> to scale with each other*/
+    margin: 10px;
 }
 
-.box2 {
-    max-width: 1000px;
-    max-height: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: rgb(177, 205, 212);
-    border: 2px solid rgb(9, 138, 224);
-    border-radius: 50px;
-    text-align: center;
-    font-size: 15pt;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: 20px;
-}
-
-.box3 {
-    max-width: 1000px;
-    max-height: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: rgb(177, 205, 212);
-    border: 2px solid rgb(9, 138, 224);
-    border-radius: 50px;
-    text-align: center;
-    font-size: 15pt;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: 20px;
-}
-
-.box4 {
-    max-width: 1000px;
-    max-height: 1000px;
+.box {
+    width: 80%;
     margin: 30px auto;
     padding: 30px;
     background-color: rgb(177, 205, 212);
