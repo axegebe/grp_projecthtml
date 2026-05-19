@@ -9,18 +9,6 @@
         font-size: 36pt;
 }
 
-.secondheading {
-    margin: auto;
-    border: 3px solid rgb(8, 224, 19);;
-    padding: 10px;
-    background-color: aliceblue;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    white-space: nowrap; /*steps to split into how much interval, smoothness, overflow to hide text not 'typed out' yet,*/
-    overflow: hidden;
-    text-align: center;
-}
-
 body {
     background-color: rgb(238, 78, 86);
 }
