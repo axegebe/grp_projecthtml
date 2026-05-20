@@ -1,86 +1,125 @@
-.header {
-    background-color: black;
-    color: darkturquoise;
-    padding: 70px;
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+
+.title{
+    font-family: "Instrument Serif";
+    font-weight: bold;
+    color: #feffd0;
+    font-size: 12vh;
     text-align: center;
-    font-family: systemspace;
-    background-image: url(photos/snookerheader.jpg);
-    font-size: 36pt;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #572f17;
 }
 
-.intro {
+.nav{
     display: flex;
-    flex-wrap: wrap;
-}
-
-.intro table {
-    margin: auto;
-    margin-top: 20px;
-    margin-left: 50px;
-    width: 40%;
-    background-color: lightgray;
-    border-radius: 20px;
-    border: 7px solid black;
-    color: black;
-    padding: 10px;
-}
-
-.navigation {
-    display: flex;
-    padding: 15px;
-}
-
-.navigation a {
-    font-family: systemspace;
-    position: sticky;
-    text-align: center;
+    background-color: #241309;
+    color: #feffd0;
+    height: 8vh;
     width: 100%;
-    background-color:darksalmon;
-    color: darkmagenta;
-    text-decoration: none;
-    margin-left: 10px;
-    border: 2px solid darkred;
-    border-radius: 20px;
-    padding: 15px;
 }
 
-.navigation a:nth-child(5) {
-    margin-left: 20%;
+.nav div{
+    cursor: pointer;
+    margin: auto;
+    width: auto;
+    height: 6vh;
 }
 
-.navigation a:hover {
-    background-color: blanchedalmond;
-}
-.navigation a:active {
-    background-color: cornflowerblue;
-}
-
-td {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif;
-    
+.content{
+    display: flex;
+    width: auto;
+    height: 70vh;
 }
 
-body {
-    background-color: forestgreen;
+.billiards{
+    height: 70vh;
+    width: 30vw;
 }
 
-/*position sticky should let the table headings stay on top no matter how far scrolled down*/
-/*Since css places elements vertically, need to use flexbox to place side by side, then specify which th via nth child to create space on the left via margin-left */
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0px;
+    height:70vh;
+    width: 70vw;
+}
 
-h2{
-    background-color: darkgreen;
-    color: whitesmoke;
-    padding: 20px;
-    margin: 20px;
-    font-size: 30px;
- }
- 
- @font-face {
-    font-family: systemspace;
-    src: url(font/04B_03__.TTF);
+.information div{
+    flex: 1;
+    margin: 0px;
+    margin: 1vw;
+}
+
+.information div p{
+  font-size: 3.2vh;
+  margin: 0;
+  color: #feffd0;
+}
+
+.information div h1{
+    font-size: 7vh;
+    margin: 0 0 1vh 0;
+    color: #feffd0;
+    font-family: "Instrument Serif";
+}
+
+.start{
+    text-align: right;
+}
+
+/* animations wowzers */
+.intro {
+  animation: fadeInRight 1.2s ease-in-out forwards 0.2s;
+}
+
+.start {
+  animation: fadeInLeft 1.2s ease-in-out forwards 0.4s;
+}
+
+.req {
+  animation: fadeInRight 1.2s ease-in-out forwards 0.6s;
+}
+
+.billiards {
+    animation: fadeInLeft 1.5s ease-in-out forwards 0.1s;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(600px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-600px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+body{
+    background-color:#3a5c41;
+    font-size: 5vh;
+    margin: 0px;
+}
+
+a{
+  color: #deb13f;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #aa882f;
 }
