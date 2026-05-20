@@ -26,14 +26,22 @@
     height: 6vh;
 }
 
+.nav div a{
+  color: #feffd0 ;
+}
+
+.nav div a:hover{
+  color: #b0b190 ;
+}
+
 .content{
     display: flex;
     width: auto;
-    height: 70vh;
+    height: 65vh;
 }
 
 .billiards{
-    height: 70vh;
+    height: auto;
     width: 30vw;
 }
 
@@ -67,6 +75,51 @@
 
 .start{
     text-align: right;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+}
+
+/* scrolling thing  */
+.scrolling-div {
+  width: 45%;
+  height: 11.5vh;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #324736;
+}
+
+.scrolling-content {
+  display: inline-block;
+  animation: scroll 8s linear infinite;
+  will-change: transform;
+  
+}
+
+.scrolling-content span {
+  display: inline-block;
+  padding: 0 .1vw; /* spacing between items */
+  font-size: 10vh;
+  color: #feffd0;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.contact{
+  height: 11.5vh;
+  width: 55%;
+  background-color: #324736;
+  font-size: 2.6vh;
+}
+
+.contact p {
+  margin: 2vh;
+  color: #feffd0;
 }
 
 /* animations wowzers */
@@ -123,3 +176,4 @@ a{
 a:hover{
   color: #aa882f;
 }
+
